@@ -1,0 +1,5 @@
+This program demonstrates how changes performace when you use or don't use goroutines. Also it served me as my little playground to test some stuff. 
+
+On Linux you can build and launch this code by using buildandrun.sh script with a single argument representing how many data you want to generate (Though you still need go installed).
+If you're launching this program with very big data size (starting from tens of thousands it will take minutes) it can work really slow (It is O(n^2) algorithm that is launched 14 times).
+Note that if you're running this while not having multi-core CPU, goroutines will probably have no positive effect in algorithm work speed, because there is no IO operations in it. 
